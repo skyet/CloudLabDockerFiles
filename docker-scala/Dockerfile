@@ -7,5 +7,5 @@ RUN apt-get install libjansi-java; \
     dpkg -i scala-2.10.3.deb; \
     rm -f scala-2.10.4.deb
 
-# cleanup
+# cleanup temp files
 RUN apt-get clean && rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
